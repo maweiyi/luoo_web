@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href="/css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="/plugins/slick/slick.css">
+    <link rel="stylesheet" href="/plugins/slick/slick-theme.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .slider {
+        width: 50%;
+        margin: 100px auto;
+      }
+
+      .slick-slide {
+        margin: 0px 20px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+    </style>
   </head>
   <body>
   <div id="index">
-    <h1><%= title %></h1>
+    <!--h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <p>{{name}}</p>
     <p>{{name}}</p>
     <button @click="click">Click Me</button>
-    <button @click="clickOther">Click Me</button>
+    <button @click="clickOther">Click Me</button-->
+
+    <section class="fades slider">
+      <div>
+        <img src="/img/11.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/22.jpg" style="height: 200px;">
+      </div>
+      <div>
+        <img src="/img/33.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/11.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/22.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/33.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/11.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/22.jpg" style="height: 200px">
+      </div>
+      <div>
+        <img src="/img/33.jpg" style="height: 200px">
+      </div>
+    </section>
+
   </div>
 
 
+  <script src="js/plugins/jquery.min.js"></script>
+  <script src="js/plugins/bootstrap.min.js"></script>
+  <!--轮播图插件-->
+  <script src="plugins/slick/slick.js"></script>
   <script src="/js-built/index.js"></script>
+  <script>
+    $(function () {
+        $('.fades').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            slide: 'div',
+            cssEase: 'linear'
+        });
+
+
+
+    })
+  </script>
   </body>
 
 </html>
