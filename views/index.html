@@ -49,8 +49,7 @@
         </div>
 
         <div class="logged-out-wrapper" id="loggedOutWrapper">
-            <a href="javascript:;" rel="nofollow" class="ln-top-login"> 注册/登录 </a>
-
+            <a id="login" href="javascript:;" rel="nofollow" class="ln-top-login"> 注册/登录 </a>
         </div>
     </div>
 </div>
@@ -294,7 +293,7 @@
 </div>
 <div class="footer">
     <div class="foot-ct clearfix">
-        
+
     </div>
 </div>
 
@@ -318,6 +317,51 @@
             cssEase: 'linear'
         });
 
+
+        $('#login').mouseenter(function () {
+            var d = dialog({
+                align: 'bottom',
+                quickClose: true//
+            });
+            d.content(
+                `<div class="" id="qtip-8-content" aria-atomic="true" style="background: white; box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.2);">
+                 <div class="dialog-passport">
+                 <div class="dialog-head">
+                 <span class="title">
+                 登录
+                 </span>
+                 <a href="javascript:;" rel="nofollow" class="ln-reg btn-dialog-register" data-tipid="registerDialog" data-remote="http://www.luoo.net/register/dialog" data-width="235">
+                 注册
+                 </a>
+                 <span class="fright">没有账号？</span>
+                 </div>
+                 <form class="form-ajax" action="http://www.luoo.net/login/" callback="login_cback">
+                 <div class="inline-input">
+                 <span class="label">邮箱</span>
+                 <input type="text" class="input-passport" name="name" required="">
+                 </div>
+                 <div class="inline-input">
+                 <span class="label">密码</span>
+                 <input type="password" class="input-passport" name="password" required="">
+                 </div>
+                 <div class="btn-wrapper">
+                 <a href="javascript:;" class="btn btn-positive btn-login-submit rounded" rel="nofollow">
+                 登录
+                 </a>
+                 <span class="btn btn-positive btn-login-msg rounded" style="display:none;">
+                 提示
+                 </span>
+                 </div>
+                 <div class="clearfix">
+                 <label><input type="checkbox" name="remember"> 下次自动登录</label>
+                 <a href="http://www.luoo.net/login/forgot" rel="nofollow" class="ln-resetpwd">找回密码</a>
+                 </div>
+                 </form>
+                 </div>`
+            );
+            console.log("LLLLLLLL");
+            d.show(document.getElementById('loggedOutWrapper'));
+        });
 
     })
 </script>

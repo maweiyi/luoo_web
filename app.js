@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var music = require('./routes/music');
 
 var app = express();
 
@@ -30,7 +31,7 @@ app.use(function (req, res, next) {
 });
 
 // uncomment after placing your favicon in s/public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 //普通中间件
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -41,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //路由中间件，相当于在Java的类上@RequestMapping
 app.use('/', index);
 app.use('/users', users);
+app.use('/music', music);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
