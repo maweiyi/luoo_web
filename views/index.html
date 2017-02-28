@@ -1,96 +1,317 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
-    <link rel="stylesheet" href="/css/plugins/bootstrap.css">
+    <link rel='stylesheet' href='/css/style.css'/>
+    <!--link rel="stylesheet" href="/css/plugins/bootstrap.css"-->
     <link rel="stylesheet" href="/plugins/slick/slick.css">
     <link rel="stylesheet" href="/plugins/slick/slick-theme.css">
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-      }
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/luoo.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-ct">
+        <a href="#" class="logo">
+            <span class="icon-logo"></span>
+        </a>
+        <div class="nav">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">期刊</a>
+                </li>
+                <li>
+                    <a href="#">单曲</a>
+                </li>
+                <li>
+                    <a href="#">专栏</a>
+                </li>
+                <li>
+                    <a href="#">活动</a>
+                </li>
+                <li>
+                    <a href="#">APP</a>
+                </li>
+            </ul>
+        </div>
+        <div class="head-search">
+            <form class="search-form" action="#" id="headSearchForm">
+                <input type="text" class="search-input" name="q" autocomplete="off">
+                <button class="search-btn" type="submit">
+                    <span class="icon-search"></span>
+                </button>
+            </form>
+        </div>
+        <div class="logged-in-wrapper" id="loggedInWrapper">
 
-      * {
-        box-sizing: border-box;
-      }
+        </div>
 
-      .slider {
-        width: 50%;
-        margin: 100px auto;
-      }
+        <div class="logged-out-wrapper" id="loggedOutWrapper">
+            <a href="javascript:;" rel="nofollow" class="ln-top-login"> 注册/登录 </a>
 
-      .slick-slide {
-        margin: 0px 20px;
-      }
+        </div>
+    </div>
+</div>
+<div class="container index-ct">
+    <div id="slider" class="fades flexslider section-site-first">
+        <div>
+            <img src="/img/11.jpg">
+        </div>
+        <div>
+            <img src="/img/22.jpg">
+        </div>
+        <div>
+            <img src="/img/33.jpg">
+        </div>
+        <div>
+            <img src="/img/11.jpg">
+        </div>
+    </div>
 
-      .slick-slide img {
-        width: 100%;
-      }
+    <div class="section-vol">
+        <div class="section-head clearfix">
+            <h3>
+                <span class="section-head-label"></span>
+                音乐期刊
+            </h3>
+            <div class="fright">
+                <a href="#" class="tag">摇滚</a>
+                <a href="#" class="tag">另类</a>
+                <a href="#" class="tag">民谣</a>
+                <a href="#" class="tag">流行</a>
+                <a href="#" class="tag">电子</a>
+                <a href="#" class="tag">古典</a>
+                <a href="#" class="tag">爵士</a>
+                <a href="#" class="tag">金属</a>
+                <a href="#" class="tag">朋克</a>
+                <a href="#" class="tag">说唱</a>
+                <a href="#" class="tag ln-more">更多<span class="icon-more"></span></a>
+            </div>
+        </div>
+        <div class="section-ct clearfix">
+            <div class="vol-item-lg">
+                <a href="http://www.luoo.net/music/896" class="cover-wrapper cover-wrapper-lg">
+                    <img src="http://img-cdn.luoo.net/pics/vol/58af2d9879169.jpg?imageView2/1/w/640/h/452"
+                         alt="我们终将奔赴向前" class="cover-lg rounded">
+                    <span class="icon-play-lg" style="opacity: 1"></span>
+                    <div class="play-btn-mask" style="opacity: 0"></div>
+                </a>
+                <a href="http://www.luoo.net/music/896" class="title">vol.896 我们终将奔赴向前</a>
+            </div>
+            <div class="vol-item">
+                <a href="http://www.luoo.net/music/895" class="cover-wrapper">
+                    <img src="http://img-cdn.luoo.net/pics/vol/58a9c994116ae.jpg?imageView2/1/w/640/h/452" alt="两个前男&女友"
+                         class="cover rounded">
+                    <span class="icon-play"></span>
+                    <div class="play-btn-mask"></div>
+                </a>
 
-      .slick-prev:before,
-      .slick-next:before {
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-  <div id="index">
-    <!--h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>{{name}}</p>
-    <p>{{name}}</p>
-    <button @click="click">Click Me</button>
-    <button @click="clickOther">Click Me</button-->
+                <a class="title" href="http://www.luoo.net/music/895">vol.895 两个前男&女友</a>
+            </div>
+            <div class="vol-item">
+                <a href="http://www.luoo.net/music/894" class="cover-wrapper">
+                    <img src="http://img-cdn.luoo.net/pics/vol/58a349ece5846.jpg?imageView2/1/w/640/h/452" alt="他已失去控制"
+                         class="cover rounded">
+                    <span class="icon-play"></span>
+                    <div class="play-btn-mask"></div>
+                </a>
 
-    <section class="fades slider">
-      <div>
-        <img src="/img/11.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/22.jpg" style="height: 200px;">
-      </div>
-      <div>
-        <img src="/img/33.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/11.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/22.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/33.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/11.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/22.jpg" style="height: 200px">
-      </div>
-      <div>
-        <img src="/img/33.jpg" style="height: 200px">
-      </div>
-    </section>
+                <a class="title" href="http://www.luoo.net/music/894">vol.894 他已失去控制</a>
+            </div>
 
-  </div>
+            <div class="section-m clearfix">
+                <div class="section-musician">
+                    <div class="section-head clearfix">
+                        <h3><span class="section-head-label"></span>原创推荐</h3>
+                    </div>
+                    <div class="section-ct">
+                        <div class="clearfix">
+                            <img src="http://img-cdn.luoo.net/pics/performers/8351/i_58b3c40a12393.jpg?imageView2/1/w/350"
+                                 alt="江生-春天快来跳支舞" class="cover rounded">
+                            <div class="title">
+                                <div class="align-fix">
+                                    <div>
+                                        <a href="http://www.luoo.net/musician/" class="single-name">春天快来跳支舞</a>
+                                        <p class="artist">江生</p>
+                                        <p class="pubdate">2017-02-27</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="remark">
+                            <span class="quote-before"></span> <span>伴着冰雪初融的前奏，来自海边城市厦门的独立民谣歌手江生，爱上了一个叫做“春天”的女孩，她的舞姿曼妙，带着春意的盎然。现在，打开冬眠的心，蹭着春光的温暖，“在湖畔和树下”来一场浪漫的约会，可好？也许这就是《春天快来跳支舞》的魅力吧。</span>
+                            <span class="quote-after"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-essay">
+                    <div class="section-head clearfix">
+                        <div class="fright">
+                            <a href="http://www.luoo.net/musician/" class="tag">单曲</a>
+                            <a href="http://www.luoo.net/essays/" class="tag">专栏</a>
+                            <a href="http://www.luoo.net/musician/" class="tag ln-more">更多<span
+                                    class="icon-more"></span></a>
+                        </div>
+                    </div>
+                    <div class="section-ct clearfix">
+
+                        <div class="essay-item">
+                            <a href="http://www.luoo.net/essay/827" class="cover-wrapper">
+                                <img src="http://img-cdn.luoo.net/pics/essays/201702/FlD3u6XenyHPi3Rw-KAYp8l0aE5b.jpg?imageView2/1/w/350/h/250"
+                                     alt="华语音乐进入了倒退时代？" class="cover rounded">
+                            </a>
+                            <div class="meta rounded">
+                                <p class="title"><a class="ln-title" href="http://www.luoo.net/essay/827"
+                                                    title="华语音乐进入了倒退时代？">华语音乐进入了倒退时代？</a></p>
+                                <p class="author"><a href="http://www.luoo.net/author/essays/1137439" class="author">假酒馆音乐</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="essay-item">
+                            <a href="http://www.luoo.net/essay/826" class="cover-wrapper">
+                                <img src="http://img-cdn.luoo.net/pics/essays/201702/FrUBCv-ioKfo57GCrI6nmIy-yX-i.jpg?imageView2/1/w/350/h/250"
+                                     alt="我可以亲吻你的伤口吗？" class="cover rounded">
+                            </a>
+                            <div class="meta rounded">
+                                <p class="title"><a class="ln-title" href="http://www.luoo.net/essay/826"
+                                                    title="我可以亲吻你的伤口吗？">我可以亲吻你的伤口吗？</a></p>
+                                <p class="author"><a href="http://www.luoo.net/author/essays/766370"
+                                                     class="author">阿Yan</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-event">
+                <div class="section-head clearfix">
+                    <h3><span class="section-head-label"></span>热门活动</h3>
+                    <div class="fright">
+                        <a href="http://www.luoo.net/event/index/city/100002" class="tag">北京</a>
+                        <a href="http://www.luoo.net/event/index/city/100819" class="tag">上海</a>
+                        <a href="http://www.luoo.net/event/index/city/101991" class="tag">广州</a>
+                        <a href="http://www.luoo.net/event/index/city/102015" class="tag">深圳</a>
+                        <a href="http://www.luoo.net/event/index/city/101733" class="tag">武汉</a>
+                        <a href="http://www.luoo.net/event/index/city/102323" class="tag">成都</a>
+                        <a href="http://www.luoo.net/event/index/city/103296" class="tag">台湾</a>
+                        <a href="http://www.luoo.net/event/index/city/103269" class="tag">香港</a>
+                        <a href="http://www.luoo.net/event/" class="tag ln-more">更多<span class="icon-more"></span></a>
+                    </div>
+                </div>
+                <div class="section-ct clearfix" id="eventHolder">
+                    <div class="event-item">
+                        <a href="http://www.luoo.net/event/14638" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14638/58ae9362c0fc0.jpg?imageView2/1/w/180/h/225"
+                                 alt="Festivus" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14638" class="title" title="Festivus">Festivus</a>
+                            <p class="meta">时间：2017-03-10</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：on stage</p>
+                            <p class="meta">费用：140元 - 180元</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <a href="http://www.luoo.net/event/14590" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14590/58a12fdb6c2ef.jpg?imageView2/1/w/180/h/225"
+                                 alt="The Temper Trap 上海演唱会" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14590" class="title" title="The Temper Trap 上海演唱会">The
+                                Temper Trap 上海演唱会</a>
+                            <p class="meta">时间：2017-03-06</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：浅水湾文化艺术中心</p>
+                            <p class="meta">费用：288元 - 330元</p>
+                        </div>
+                    </div>
+                    <div class="event-item margin-right-0">
+                        <a href="http://www.luoo.net/event/14577" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14577/5896c66b2f85a.jpg?imageView2/1/w/180/h/225"
+                                 alt="日本迷幻乐队Tempalay中国巡演" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14577" class="title" title="日本迷幻乐队Tempalay中国巡演">日本迷幻乐队Tempalay中国巡演</a>
+                            <p class="meta">时间：2017-03-03</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：育音堂</p>
+                            <p class="meta">费用：120元</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <a href="http://www.luoo.net/event/14554" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14554/5878768db90a5.jpg?imageView2/1/w/180/h/225"
+                                 alt="Msterain小雨乐队新专辑《破墨山谷》2017全国巡演" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14554" class="title"
+                               title="Msterain小雨乐队新专辑《破墨山谷》2017全国巡演">Msterain小雨乐队新专辑《破墨山谷》2017全国巡演</a>
+                            <p class="meta">时间：2017-04-14</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：浅水湾文化艺术中心</p>
+                            <p class="meta">费用：80元 - 100元</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <a href="http://www.luoo.net/event/14582" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14582/5899864c7f9d5.jpg?imageView2/1/w/180/h/225"
+                                 alt="Alcest新专辑Kodama2017中国巡演" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14582" class="title" title="Alcest新专辑Kodama2017中国巡演">Alcest新专辑Kodama2017中国巡演</a>
+                            <p class="meta">时间：2017-04-14</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：MAO livehouse</p>
+                            <p class="meta">费用：120元 - 150元</p>
+                        </div>
+                    </div>
+                    <div class="event-item margin-right-0">
+                        <a href="http://www.luoo.net/event/14597" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/event/14597/58a2872c1c677.jpg?imageView2/1/w/180/h/225"
+                                 alt="SUBS乐队2017年全国巡演" class="cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/event/14597" class="title" title="SUBS乐队2017年全国巡演">SUBS乐队2017年全国巡演</a>
+                            <p class="meta">时间：2017-03-24</p>
+                            <p class="meta">地点：上海</p>
+                            <p class="meta">场所：on stage</p>
+                            <p class="meta">费用：50元 - 80元</p>
+                        </div>
+                    </div>
+
+                </div>
 
 
-  <script src="js/plugins/jquery.min.js"></script>
-  <script src="js/plugins/bootstrap.min.js"></script>
-  <!--轮播图插件-->
-  <script src="plugins/slick/slick.js"></script>
-  <script src="/js-built/index.js"></script>
-  <script>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="foot-ct clearfix">
+        
+    </div>
+</div>
+
+
+<script src="js/plugins/jquery.min.js"></script>
+<script src="js/plugins/bootstrap.min.js"></script>
+<script src="js/plugins/dialog-min.js"></script>
+<!--轮播图插件-->
+<script src="plugins/slick/slick.js"></script>
+<script src="/js-built/index.js"></script>
+<script>
     $(function () {
         $('.fades').slick({
             dots: true,
             arrows: false,
             infinite: true,
+            adaptiveHeight: true,
             speed: 500,
             fade: true,
             slide: 'div',
@@ -98,9 +319,8 @@
         });
 
 
-
     })
-  </script>
-  </body>
+</script>
+</body>
 
 </html>
