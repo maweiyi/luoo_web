@@ -7,34 +7,337 @@
     <link rel="stylesheet" href="css/vol.css">
 </head>
 <body>
+<div class="header">
+    <div class="header-ct">
+        <a href="http://www.luoo.net" class="logo">
+            <span class="icon-logo"></span>落网
+        </a>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="http://www.luoo.net/music/">期刊</a></li>
+                <li><a href="http://www.luoo.net/musician/">单曲</a></li>
+                <li><a href="http://www.luoo.net/essays/">专栏</a></li>
+                <li><a href="http://www.luoo.net/event/">活动</a></li>
+                <li><a href="http://www.luoo.net/app/">APP</a></li>
+            </ul>
 
-<input id="cur" hidden value=<%=cur%>>
-<div id="kkpager" class="paginator" style="margin-top: 100px">
+        </div>
 
+        <div class="head-search">
+            <form class="search-form" action="http://www.luoo.net/search/" id="headSearchForm">
+                <input type="text" class="search-input" name="q" autocomplete="off">
+                <button class="search-btn" type="submit">
+                    <span class="icon-search"></span>
+                </button>
+            </form>
+        </div>			<!-- logged-in-wrapper -->
+        <div class="logged-in-wrapper" id="loggedInWrapper">
+
+        </div>
+        <!-- logged-in-wrapper end-->
+
+        <div class="logged-out-wrapper" id="loggedOutWrapper" data-remote="http://www.luoo.net/login/dialog" data-tipid="headLoginDialog" data-width="235" data-show="mouseenter" data-adjusty="-12">
+            <a href="javascript:;" rel="nofollow" class="ln-top-login"> 注册/登录 </a>
+
+        </div>
+        <!-- logged-out-wrapper -->
+    </div>
 </div>
+<!--/// header end -->
+<!-- container start -->
+<div class="container">
+
+    <div class="clearfix">
+        <!-- article start-->
+        <div class="article article-sm">
+            <div class="page-nav rounded clearfix">
+
+                <div class="curt-nav">
+                    <a href="http://www.luoo.net/music/" class="item actived">最新期刊</a>
+                </div>
+                <div class="pagenav-wrapper">
+                    <a href="http://www.luoo.net/music/rock" class="item">摇滚</a><a href="http://www.luoo.net/music/alternative" class="item">另类</a><a href="http://www.luoo.net/music/folk" class="item">民谣</a><a href="http://www.luoo.net/music/pop" class="item">流行</a><a href="http://www.luoo.net/music/electronic" class="item">电子</a><a href="http://www.luoo.net/music/classical" class="item">古典</a><a href="http://www.luoo.net/music/jazz" class="item">爵士</a><a href="http://www.luoo.net/music/metal" class="item">金属</a><a href="http://www.luoo.net/music/punk" class="item">朋克</a><a href="http://www.luoo.net/music/hip-hop" class="item">说唱</a><a href="http://www.luoo.net/music/world" class="item">世界音乐</a><a href="http://www.luoo.net/music/ambient" class="item">氛围</a><a href="http://www.luoo.net/music/ost" class="item">原声</a><a href="http://www.luoo.net/music/reggae" class="item">雷鬼</a><a href="http://www.luoo.net/music/country" class="item">乡村</a><a href="http://www.luoo.net/music/blues" class="item">蓝调</a><a href="http://www.luoo.net/music/experimental" class="item">实验</a><a href="http://www.luoo.net/music/britpop" class="item">英伦</a><a href="http://www.luoo.net/music/post-rock" class="item">后摇</a><a href="http://www.luoo.net/music/psychedelic-rock" class="item">迷幻</a><a href="http://www.luoo.net/music/neo-wave" class="item">暗潮</a><a href="http://www.luoo.net/music/mandarin-pop" class="item">华语流行</a><a href="http://www.luoo.net/music/hardcore" class="item">硬核</a><a href="http://www.luoo.net/music/post-punk" class="item">后朋克</a><a href="http://www.luoo.net/music/vocal" class="item">人声</a><a href="http://www.luoo.net/music/brand" class="item">品牌</a></div>			</div>
+            <!-- vol-list -->
+            <div class="vol-list">
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/897" class="cover-wrapper" title="夜的肖邦">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58b7394621f98.jpg?imageView2/1/w/640/h/452" alt="夜的肖邦" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/897" class="name" title="夜的肖邦">vol.897 夜的肖邦</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									45
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									53
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/896" class="cover-wrapper" title="我们终将奔赴向前">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58af2d9879169.jpg?imageView2/1/w/640/h/452" alt="我们终将奔赴向前" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/896" class="name" title="我们终将奔赴向前">vol.896 我们终将奔赴向前</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									210
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									3943
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/895" class="cover-wrapper" title="两个前男&女友">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58a9c994116ae.jpg?imageView2/1/w/640/h/452" alt="两个前男&女友" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/895" class="name" title="两个前男&女友">vol.895 两个前男&女友</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									252
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									8720
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/894" class="cover-wrapper" title="他已失去控制">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58a349ece5846.jpg?imageView2/1/w/640/h/452" alt="他已失去控制" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/894" class="name" title="他已失去控制">vol.894 他已失去控制</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									224
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									12202
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/893" class="cover-wrapper" title="无心深究的生活庸常">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58a079fe3722b.jpg?imageView2/1/w/640/h/452" alt="无心深究的生活庸常" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/893" class="name" title="无心深究的生活庸常">vol.893 无心深究的生活庸常</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									170
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									14293
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/892" class="cover-wrapper" title="琴声阵阵">
+                        <img src="http://img-cdn.luoo.net/pics/vol/5898bb78444cf.jpg?imageView2/1/w/640/h/452" alt="琴声阵阵" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/892" class="name" title="琴声阵阵">vol.892 琴声阵阵</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									184
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									16999
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/891" class="cover-wrapper" title="舞尽人生">
+                        <img src="http://img-cdn.luoo.net/pics/vol/5895ce5348731.jpg?imageView2/1/w/640/h/452" alt="舞尽人生" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/891" class="name" title="舞尽人生">vol.891 舞尽人生</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									149
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									17151
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/890" class="cover-wrapper" title="再见，二零一六。">
+                        <img src="http://img-cdn.luoo.net/pics/vol/588b3fb08ef6b.jpg?imageView2/1/w/640/h/452" alt="再见，二零一六。" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/890" class="name" title="再见，二零一六。">vol.890 再见，二零一六。</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									403
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									17821
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/889" class="cover-wrapper" title="你所渴望的真实存在">
+                        <img src="http://img-cdn.luoo.net/pics/vol/58877fadc100d.jpg?imageView2/1/w/640/h/452" alt="你所渴望的真实存在" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/889" class="name" title="你所渴望的真实存在">vol.889 你所渴望的真实存在</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									189
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									18118
+								</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.luoo.net/music/888" class="cover-wrapper" title="红尘孤骑">
+                        <img src="http://img-cdn.luoo.net/pics/vol/5884943d90a4d.jpg?imageView2/1/w/640/h/452" alt="红尘孤骑" class="cover rounded">
+                    </a>
+                    <div class="meta rounded clearfix">
+                        <a href="http://www.luoo.net/music/888" class="name" title="红尘孤骑">vol.888 红尘孤骑</a>
+                        <span class="comments">
+									<span class="icon-comment-count"></span>
+									194
+								</span>
+                        <span class="favs">
+									<span class="icon-favd"></span>
+									17677
+								</span>
+                    </div>
+                </div>
+            </div>
+            <!-- vol-list end-->
+            <div id="kkpager" class="paginator"></div>
+        </div>
+        <!--/// article end-->
+
+        <!-- aside start-->
+        <div class="aside" id="slidebar">
+
+            <!-- <div class="widget">
+                <a href="http://www.luoo.net/radio/">
+                    <img src="http://s.luoo.net/img/radio.png" alt="收听落网电台">
+                </a>
+            </div> -->
+
+            <div class="widget" id="widgetHotVol">
+                <div class="widget-head">
+                    <span class="title">最近热门期刊</span>
+                </div>
+                <div class="widget-ct pic-widget">
+
+                    <div class="item">
+                        <a href="http://www.luoo.net/music/522" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/vol/526f89fd929e2.jpg?imageView2/1/w/160/h/120" alt="听说" class="vol-cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/music/522" title="听说" class="title">听说</a>
+                            <p class="description">23013人收藏</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.luoo.net/music/615" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/vol/5381e9ad42681.jpg?imageView2/1/w/160/h/120" alt="爱是我阑珊的衣履" class="vol-cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/music/615" title="爱是我阑珊的衣履" class="title">爱是我阑珊的衣履</a>
+                            <p class="description">41010人收藏</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.luoo.net/music/818" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/vol/572f6fb289d6e.jpg?imageView2/1/w/160/h/120" alt="旅途" class="vol-cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/music/818" title="旅途" class="title">旅途</a>
+                            <p class="description">18106人收藏</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.luoo.net/vocal/004" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/vol/57862dc457a86.jpg?imageView2/1/w/160/h/120" alt="AirRadio空气赫兹" class="vol-cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/vocal/004" title="AirRadio空气赫兹" class="title">AirRadio空气赫兹</a>
+                            <p class="description">18805人收藏</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.luoo.net/music/895" class="cover-wrapper">
+                            <img src="http://img-cdn.luoo.net/pics/vol/58a9c994116ae.jpg?imageView2/1/w/160/h/120" alt="两个前男&女友" class="vol-cover rounded">
+                        </a>
+                        <div class="info">
+                            <a href="http://www.luoo.net/music/895" title="两个前男&女友" class="title">两个前男&女友</a>
+                            <p class="description">8720人收藏</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--/// aside end-->
+
+    </div>
+</div>
+<div class="footer">
+    <div class="foot-ct clearfix">
+
+    </div>
+</div>
+
 
 <script src="js/plugins/jquery.min.js"></script>
 <script src="js/plugins/kkpager.js"></script>
+<script src="js/plugins/sticky-kit.min.js"></script>
 <script>
     $(function () {
-        var s = $('#cur').val();
-        console.log(s);
+        $("#slidebar").stick_in_parent();
+        //var s = $('#cur').val();
         kkpager.generPageHtml({
-            pno :s,
+            pno: 1,
             //总页码
-            total :100,
+            total: 100,
             //总数据条数
-            totalRecords : 1000,
+            totalRecords: 1000,
             //链接前部
-            hrefFormer : '',
+            hrefFormer: '',
             //链接尾部
-            hrefLatter : '',
+            hrefLatter: '',
             //链接算法
-            getLink : function(n){
-               if(n == 1){
+            getLink: function (n) {
+                if (n == 1) {
                     return this.hrefFormer + this.hrefLatter;
                 }
-                return this.hrefFormer  + n + this.hrefLatter;
+                return this.hrefFormer + n + this.hrefLatter;
             }
 
         });
